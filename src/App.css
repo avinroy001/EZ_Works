@@ -1,3 +1,21 @@
+.mainWrapper{
+  display: flex;
+  justify-content:space-between;
+  align-items: center;  
+  height: 100vh;
+  margin-left: 100px;
+}
 .leftWrapper{
-  
+  width: 70vw;
+}
+.cards{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  /* justify-content: center;
+  align-items: center; */
+}
+.leftText{
+  font-size:28px;
+  font-family: "Verdana";
 }
