@@ -12,7 +12,7 @@ const Email = () => {
         const data = { email: email };
 
         try {
-            const res = await axios.post("http://34.225.132.160:8002/api", data);
+            const res = await axios.post("https://34.225.132.160:8002/api", data);
             console.log(res);
             setError('');
             setMsg("Form Submitted"); 
