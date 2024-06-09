@@ -1,21 +1,96 @@
 .mainWrapper{
   display: flex;
-  justify-content:space-between;
+  gap: 50px;
+  justify-content:center;
+  flex-wrap: wrap;
   align-items: center;  
   height: 100vh;
-  margin-left: 100px;
+ 
+  box-sizing: content-box;
 }
 .leftWrapper{
-  width: 70vw;
+  width: 40vw;
 }
 .cards{
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
+  width: 50vw;
+
   /* justify-content: center;
   align-items: center; */
 }
 .leftText{
   font-size:28px;
-  font-family: "Verdana";
+  font-family: "Cubos";
+  /* text-overflow: ellipsis; */
+  /* text-align: center; */
+}
+input{
+  font-size: 20px;
+  padding-left: 20px;
+}
+.mainText{
+  /* text-align: center; */
+}
+.logo{
+  width: 100%;
+}
+@media only screen and (max-width:480px) {
+    .email2{
+      display: none;
+    }
+    .mainWrapper{
+      text-align: center;
+      width: 30%;
+      justify-content: center;
+      margin-left: 150px;
+    }
+    .cards{
+      margin-left: 0px;
+    }
+    body{
+      overflow-x: hidden;
+    }
+   form{
+    
+      text-align: center;
+
+   }
+   .btn{
+    margin-top: 10px;
+  }
+  .emailid{
+    width: 60% !important;
+  }
+}
+@media only screen and (min-width:480px) {
+  .email{
+    display: none;
+  }
+}
+
+@media only screen and (max-width:980px) {
+  
+  .mainWrapper{
+    width: 80%;
+    text-align: center;
+    justify-content: center;
+    margin-left: 50px;
+  }
+  .cards{
+    justify-content: center;
+  }
+  body{
+    overflow-x: hidden;
+  }
+ form{
+  
+    text-align: center;
+
+ }
+ .btn{
+  margin-top: 10px;
+  margin-left: 0px !important;
+}
 }

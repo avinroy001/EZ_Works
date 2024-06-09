@@ -21,21 +21,27 @@ function App() {
 
     <div className="leftWrapper">
       <div>
-        <img src={logo} alt="logo" width={300}/>
-        <p className="leftText">Suite Of Business Support Services</p>
+        <img src={logo} alt="logo" className="logo"/>
+        <p className="leftText">A Suite Of Business Support Services</p>
         <div>
-        <p>
+        <p className="mainText">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt...Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
         </p>
         </div>
       </div>
+      <div className="email2">
       <Email/>
+      </div>
+      
     </div>
 
       <div className="cards">
         {dataArr.map((ele,idx)=>
           <Card pic={ele.pic} title={ele.title} text={ele.text}/>
         )}
+      </div>
+      <div className="email">
+      <Email/>
       </div>
     </div>
   );
